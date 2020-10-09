@@ -3,7 +3,7 @@
 #### Python 3 Script to jumpstart your work environment
 * Opens the default web browser
 * Launches the list of websites in tabs
-* Opens the list of desktop applications
+* Opens the specific desktop application defined function
 
 ##### Requirements
 * Python 3.5 or higher
