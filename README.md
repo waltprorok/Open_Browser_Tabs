@@ -7,3 +7,7 @@
 
 ##### Requirements
 * Python 3.5 or higher
+* Windows, Mac or Linux
+
+###### Disclaimer: Hardcoded program paths and urls.  Get the correct program path and urls for your personal system.
+
