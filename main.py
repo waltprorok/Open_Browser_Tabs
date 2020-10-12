@@ -34,9 +34,28 @@ def open_postman():
     subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\Postman\\Postman.exe'])
 
 
+def menu():
+    while True:
+        print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Exit")
+        user_input = input("\nPlease select an option: ")
+
+        if user_input == str("1"):
+            ubif_sites_browser()
+        elif user_input == str("2"):
+            open_phpstorm()
+            open_slack()
+            open_postman()
+        elif user_input == str("3"):
+            exit()
+        else:
+            print("\nSorry that is not a valid command. Please try again.\n")
+            continue
+
+
 if __name__ == "__main__":
-    ubif_sites_browser()
-    open_phpstorm()
-    open_slack()
-    open_phpstorm()
+    # ubif_sites_browser()
+    # open_phpstorm()
+    # open_slack()
+    # open_phpstorm()
+    menu()
     exit()
