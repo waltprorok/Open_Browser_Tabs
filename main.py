@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+__author__ = "Walter Prorok"
+__date__ = "10-9-2020"
+__author__ = "wprorok@ubreakifix.com"
 
 import webbrowser
 import subprocess
@@ -36,7 +39,7 @@ def open_postman():
 
 def menu():
     while True:
-        print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Exit")
+        print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Launch sites and programs\n\t4. Exit")
         user_input = input("\nPlease select an option: ")
 
         if user_input == str("1"):
@@ -46,6 +49,11 @@ def menu():
             open_slack()
             open_postman()
         elif user_input == str("3"):
+            ubif_sites_browser()
+            open_phpstorm()
+            open_slack()
+            open_postman()
+        elif user_input == str("4"):
             exit()
         else:
             print("\nSorry that is not a valid command. Please try again.\n")
@@ -53,9 +61,5 @@ def menu():
 
 
 if __name__ == "__main__":
-    # ubif_sites_browser()
-    # open_phpstorm()
-    # open_slack()
-    # open_phpstorm()
     menu()
     exit()
