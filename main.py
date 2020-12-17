@@ -25,6 +25,10 @@ def ubif_sites_browser():
         webbrowser.open(url, new=2)
 
 
+def open_google():
+    webbrowser.open('https://google.com')
+
+
 def open_phpstorm():
     subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\JetBrains\\PhpStorm 2020.1.2\\bin\\phpstorm64.exe'])
 
@@ -55,6 +59,7 @@ def menu():
             open_slack()
             open_postman()
             open_dbeaver()
+            open_google()
         # 3 open browser sites and programs
         elif user_input == str("3"):
             ubif_sites_browser()
