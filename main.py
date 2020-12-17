@@ -5,6 +5,7 @@ __author__ = "wprorok@ubreakifix.com"
 
 import webbrowser
 import subprocess
+import os
 
 ubif_urls = [
     "https://mail.google.com/mail/u/0/#inbox",
@@ -45,6 +46,10 @@ def open_dbeaver():
     subprocess.Popen(['C:\\Program Files\\DBeaver\\dbeaver.exe'])
 
 
+def clear_screen():
+    os.system('cls')
+
+
 def menu():
     while True:
         print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Launch sites and programs\n\t4. Exit")
@@ -53,6 +58,7 @@ def menu():
         # 1 open browser sites
         if user_input == str("1"):
             ubif_sites_browser()
+            clear_screen()
         # 2 launch programs
         elif user_input == str("2"):
             open_phpstorm()
@@ -60,12 +66,14 @@ def menu():
             open_postman()
             open_dbeaver()
             open_google()
+            clear_screen()
         # 3 open browser sites and programs
         elif user_input == str("3"):
             ubif_sites_browser()
             open_phpstorm()
             open_slack()
             open_postman()
+            clear_screen()
         # 4 exit program
         elif user_input == str("4"):
             exit()
