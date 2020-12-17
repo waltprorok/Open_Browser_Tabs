@@ -37,22 +37,31 @@ def open_postman():
     subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\Postman\\Postman.exe'])
 
 
+def open_dbeaver():
+    subprocess.Popen(['C:\\Program Files\\DBeaver\\dbeaver.exe'])
+
+
 def menu():
     while True:
         print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Launch sites and programs\n\t4. Exit")
         user_input = input("\nPlease select an option: ")
 
+        # 1 open browser sites
         if user_input == str("1"):
             ubif_sites_browser()
+        # 2 launch programs
         elif user_input == str("2"):
             open_phpstorm()
             open_slack()
             open_postman()
+            open_dbeaver()
+        # 3 open browser sites and programs
         elif user_input == str("3"):
             ubif_sites_browser()
             open_phpstorm()
             open_slack()
             open_postman()
+        # 4 exit program
         elif user_input == str("4"):
             exit()
         else:
