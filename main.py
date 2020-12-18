@@ -46,6 +46,10 @@ def open_dbeaver():
     subprocess.Popen(['C:\\Program Files\\DBeaver\\dbeaver.exe'])
 
 
+def open_zoom():
+    subprocess.Popen(['C:\\Program Files (x86)\\Zoom\\bin\\Zoom.exe'])
+
+
 def clear_screen():
     os.system('cls')
 
@@ -66,6 +70,7 @@ def menu():
             open_postman()
             open_dbeaver()
             open_google()
+            open_zoom()
             clear_screen()
         # 3 open browser sites and programs
         elif user_input == str("3"):
@@ -73,6 +78,9 @@ def menu():
             open_phpstorm()
             open_slack()
             open_postman()
+            open_dbeaver()
+            open_google()
+            open_zoom()
             clear_screen()
         # 4 exit program
         elif user_input == str("4"):
