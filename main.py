@@ -4,19 +4,17 @@ __date__ = "10-9-2020"
 __author__ = "wprorok@ubreakifix.com"
 
 import webbrowser
-import subprocess
 import os
 
 ubif_urls = [
-    "https://mail.google.com/mail/u/0/#inbox",
-    "https://calendar.google.com/calendar/r",
+    "https://app.slack.com/client/T01645ULG86/C030G5MPRJ9",
     "https://keep.google.com/u/0/",
-    "https://drive.google.com/drive/my-drive",
+    "https://laravel.com/docs/6.x",
     "https://ubreakifix.atlassian.net/wiki/home",
     "https://ubreakifix.atlassian.net/jira/your-work",
-    "https://github.com/",
-    "https://console.aws.amazon.com/cloud9/ide/0be6d983072043d5b8f900c7909e8555",
-    "https://dev-prorok.ubif.net/",
+    "https://github.com/ubreakifix/biffy",
+    "https://us-east-1.console.aws.amazon.com/cloud9/ide/8844a1d7dc034d6fa4d895f5b771f370?region=us-east-1#",
+    "https://dev-prorok.ubif-nonprod.net/",
 ]
 
 
@@ -30,60 +28,21 @@ def open_google():
     webbrowser.open('https://google.com')
 
 
-def open_phpstorm():
-    subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\JetBrains\\PhpStorm 2020.1.2\\bin\\phpstorm64.exe'])
-
-
-def open_slack():
-    subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\slack\\slack.exe'])
-
-
-def open_postman():
-    subprocess.Popen(['C:\\Users\\walter.prorok\\AppData\\Local\\Postman\\Postman.exe'])
-
-
-def open_dbeaver():
-    subprocess.Popen(['C:\\Program Files\\DBeaver\\dbeaver.exe'])
-
-
-def open_zoom():
-    subprocess.Popen(['C:\\Program Files (x86)\\Zoom\\bin\\Zoom.exe'])
-
-
 def clear_screen():
     os.system('cls')
 
 
 def menu():
     while True:
-        print("\nMenu:\n\t1. Launch sites\n\t2. Launch programs\n\t3. Launch sites and programs\n\t4. Exit")
+        print("\nMenu:\n\t1. Launch sites\n\t2. Exit")
         user_input = input("\nPlease select an option: ")
 
         # 1 open browser sites
         if user_input == str("1"):
             ubif_sites_browser()
             clear_screen()
-        # 2 launch programs
+        # 2 exit program
         elif user_input == str("2"):
-            open_phpstorm()
-            open_slack()
-            open_postman()
-            open_dbeaver()
-            open_google()
-            open_zoom()
-            clear_screen()
-        # 3 open browser sites and programs
-        elif user_input == str("3"):
-            ubif_sites_browser()
-            open_phpstorm()
-            open_slack()
-            open_postman()
-            open_dbeaver()
-            open_google()
-            open_zoom()
-            clear_screen()
-        # 4 exit program
-        elif user_input == str("4"):
             exit()
         else:
             print("\nSorry that is not a valid command. Please try again.\n")
