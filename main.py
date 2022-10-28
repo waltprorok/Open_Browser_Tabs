@@ -8,12 +8,12 @@ import os
 
 ubif_urls = [
     "https://app.slack.com/client/T01645ULG86/C030G5MPRJ9",
+    "https://www.pandora.com",
     "https://keep.google.com/u/0/",
     "https://laravel.com/docs/6.x",
     "https://ubreakifix.atlassian.net/wiki/home",
     "https://ubreakifix.atlassian.net/jira/your-work",
     "https://github.com/ubreakifix/biffy",
-    "https://us-east-1.console.aws.amazon.com/cloud9/ide/8844a1d7dc034d6fa4d895f5b771f370?region=us-east-1#",
     "https://dev-prorok.ubif-nonprod.net/",
 ]
 
