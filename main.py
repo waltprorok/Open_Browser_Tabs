@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 __author__ = "Walter Prorok"
 __date__ = "10-9-2020"
-__author__ = "wprorok@ubreakifix.com"
+__email__ = "wprorok@ubreakifix.com"
 
 import webbrowser
 import os
@@ -19,6 +19,7 @@ ubif_urls = [
 
 
 def ubif_sites_browser():
+    """Open the browser and new tabs"""
     for url in ubif_urls:
         print(url)
         webbrowser.open(url, new=2)
